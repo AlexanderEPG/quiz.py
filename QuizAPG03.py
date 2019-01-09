@@ -47,7 +47,7 @@ Q2 = print("""what is the square root of 625?
 (3)65
 (4)69""")
 while q2 == False:
-        print (Q1)
+        print (Q2)
         try:
                 qA = int(input("Your answer >"))
                 if qA == 1:
@@ -69,7 +69,7 @@ Q3 = print("""what is pi?
 (3)1.523632....
 (4)3.1415926...""")
 while q3 == False:
-        print (Q1)
+        print (Q3)
         try:
                 qA = int(input("Your answer >"))
                 if qA == 4:
@@ -88,12 +88,11 @@ Q4 = print("""how much wood could a woodchuck chuck if a woodchuck could chuck w
 (3)0
 (4)165937""")
 while q4 == False:
-        print (Q1)
+        print (Q4)
         try:
                 qA = int(input("Your answer >"))
                 if qA == 3:
                         score += 1
-                        print("correct woodchucks dont chuck wood!")
                         q4 = True
                 elif 0 < qA < 5:
                         q4 = True
@@ -102,5 +101,44 @@ while q4 == False:
         except ValueError:
                 print("you didnt't enter one of the numbers given, please try again")
 
+
+Q5 = print("""what is 9+10?
+(1)19
+(2)21
+(3)1
+(4)-20""")
+while q5 == False:
+        print (Q5)
+        try:
+                qA = int(input("Your answer >"))
+                if qA == 1:
+                        score += 1
+                        q5 = True
+                elif 0 < qA < 5:
+                        q5 = True
+                else:
+                        print("Please only type positve whole integers from 1-4")
+        except ValueError:
+                print("you didnt't enter one of the numbers given, please try again")
+
+
+Q6 = print("""who is the strongest?
+(1)Son Goku
+(2)Sin of Pride Escanor
+(3)
+(4)Naruto""")
+while q6 == False:
+        print (Q6)
+        try:
+                qA = int(input("Your answer >"))
+                if qA == 1:
+                        score += 1
+                        q6 = True
+                elif 0 < qA < 5:
+                        q6 = True
+                else:
+                        print("Please only type positve whole integers from 1-4")
+        except ValueError:
+                print("you didnt't enter one of the numbers given, please try again")
+
 print("you have", score,"point(s)")
-                
