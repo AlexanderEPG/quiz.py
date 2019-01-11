@@ -125,7 +125,7 @@ while q5 == False:
 Q6 = print("""who is the strongest?
 (1)Son Goku
 (2)Sin of Pride Escanor
-(3)
+(3)you the user
 (4)Naruto""")
 while q6 == False:
         print (Q6)
@@ -141,4 +141,92 @@ while q6 == False:
         except ValueError:
                 print("you didnt't enter one of the numbers given, please try again")
 
-print("you have", score,"point(s)")
+
+Q7 = print("""what is the password if the person said 12345678
+(1)12345678
+(2)2444666668888888
+(3)122333444455555666666777777788888888
+(4)11333355555577777777""")
+while q7== False:
+        print (Q7)
+        try:
+                qA = int(input("Your answer >"))
+                if qA == 2:
+                        score += 1
+                        q7 = True
+                elif 0 < qA < 5:
+                        q7 = True
+                else:
+                        print("Please only type positve whole integers from 1-4")
+        except ValueError:
+                print("you didnt't enter one of the numbers given, please try again")
+
+Q8 = print("""to get in the club you decide to hear what the password is.The security said
+six, person 1 replied three, then another person came along and the security said twelve, person 2
+replied six. What is the code to enter if the security said to you ten?
+
+(1)five
+(2)two
+(3)ten
+(4)three""")
+while q8 == False:
+        print (Q8)
+        try:
+                qA = int(input("Your answer >"))
+                if qA == 4:
+                        score += 1
+                        q8= True
+                elif 0 < qA < 5:
+                        q8 = True
+                else:
+                        print("Please only type positve whole integers from 1-4")
+        except ValueError:
+                print("you didnt't enter one of the numbers given, please try again")
+
+
+Q9 = print("""You are a special agent trying to get in a suspecious cult, you decide to wait and hear what
+the password is, the message box at the door said 6, person 1 responded 3 then the message box procceded
+to ask person 2 that was right behind person 1 and said 3, person 2 responded 2, you found out that to get in
+you need a person, you wait for another person to show up and the message box said 10, person 3 responded 2,
+the message box said to you 2, what do you respond with?
+
+(1)five
+(2)two
+(3)ten
+(4)three""")
+while q9 == False:
+        print (Q9)
+        try:
+                qA = int(input("Your answer >"))
+                if qA == 1:
+                        score += 1
+                        q9= True
+                elif 0 < qA < 5:
+                        q9 = True
+                else:
+                        print("Please only type positve whole integers from 1-4")
+        except ValueError:
+                print("you didnt't enter one of the numbers given, please try again")
+
+
+Q10 = print("""what is 10^10
+
+(1)10000000000
+(2)100000000000
+(3)1
+(4)5""")
+while q10 == False:
+        print (Q10)
+        try:
+                qA = int(input("Your answer >"))
+                if qA == 1:
+                        score += 1
+                        q10 = True
+                elif 0 < qA < 5:
+                        q10 = True
+                else:
+                        print("Please only type positve whole integers from 1-4")
+        except ValueError:
+                print("you didnt't enter one of the numbers given, please try again")
+
+print("you have", score,"/10 correct")
